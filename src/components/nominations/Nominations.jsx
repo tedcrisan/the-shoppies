@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useState, useEffect } from "react";
 import styled from "styled-components";
 import { NominationItem } from "./NominationItem";
@@ -13,7 +12,6 @@ export function Nominations({ nominations, removeNomination }) {
   return (
     <Container>
       <Progress>Nominations {nominations.length}/5</Progress>
-      {empty && <Image src="/undraw_choice.svg" alt="Choose a movie" width="240" height="240" />}
       <Chosen>
         {nominations.map((movie) => (
           <NominationItem key={movie.imdbID} {...movie} removeNomination={removeNomination} />
