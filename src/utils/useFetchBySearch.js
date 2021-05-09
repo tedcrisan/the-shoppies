@@ -14,7 +14,7 @@ export default function useFetchBySearch() {
 
   const searchOMDB = (term) => {
     axios
-      .get(`http://www.omdbapi.com/?s=${term}&type=movie&apikey=${API_KEY}`)
+      .get(`https://www.omdbapi.com/?s=${term}&type=movie&apikey=${API_KEY}`)
       .then(({ data }) => {
         if (data.Error) {
           setError(true);
