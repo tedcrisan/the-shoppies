@@ -11,7 +11,6 @@ export function Search({ nominations, addNomination, isFull }) {
   const [nominationIDs, setNominationIDs] = useState(nominations.map((movie) => movie.imdbID));
   const [showResults, setShowResults] = useState(false);
   const RESULTS_SHOWN = 5;
-  console.log("ERROR", error);
 
   useEffect(() => {
     if (error) return;
