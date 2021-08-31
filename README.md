@@ -25,3 +25,18 @@ The main objectives were to complete the following.
 > 4. Movies in search results can be added and removed from the nomination list.
 > 5. If a search result has already been nominated, disable its nominate button.
 > 6. Display a banner when the user has 5 nominations.
+
+# Tech
+> - Next.js (Framework)
+> - React
+> - Styled Components
+
+# Requirements
+As mentioned above, an API key from OMDB: http://www.omdbapi.com/apikey.aspx
+
+# Installation
+> 1. git clone https://github.com/tedcrisan/the-shoppies.git
+> 2. yarn install or npm install (Choose whichever command coincides with your package manager)
+
+# Deployment
+I used Vercel to deploy the app. Please use what you feel comfortable (Heroku, Netlify, DigitalOcean, etc...)
